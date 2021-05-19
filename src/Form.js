@@ -13,7 +13,7 @@ const Form = () => {
     <>
       <div className='form-container'>
         <span className='close-btn'>×</span>
-        <div className='form-content-left'>
+        <div className='form-content-right'>
           <img className='form-img' src='img/sw.PNG' alt='spaceship' />
         </div>
         {!isSubmitted ? (

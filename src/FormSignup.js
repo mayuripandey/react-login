@@ -8,12 +8,13 @@ const FormSignup = ({submitForm}) => {
     useForm(submitForm,validate);
 
 
-
-
     return (
-       <div className="form-content-right">
+       <div className="form-content-left">
         <form className="form" onSubmit={handleSubmit}>
-            <h1>Get started</h1>
+            <div className='form-content-imagess'>
+              <img className='' src='img/logo-sw.PNG' width="250" height="100"  alt='logo-loading' />
+            </div>
+            {/* <h1>Get started</h1> */}
             <div className="form-inputs">
                 <label htmlFor="username" 
                 className="form-label">
@@ -77,12 +78,14 @@ const FormSignup = ({submitForm}) => {
                     />
                     {errors.password2 && <p>{errors.password2}</p>}
             </div>
-            <button className="form-input-btn"
-            type ='submit'>
-                Sign-up
+            <div>
+            <button className="form-input-btn buy-btn" type="submit">
+                <div className="form-input-btn-content">Sign-Up</div>
             </button>
+            </div>
+           
             <span className='form-input-login'>
-                Already have an account? <a href='#'>here</a>
+                Already have an account? <a href='#'>Click here</a>
             </span>
         </form>
        </div>
